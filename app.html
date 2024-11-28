@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Conference</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module" async defer crossorigin></script>
+  </head>
+
+  <body>
+    <div>
+      <main>
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay muted></video>
+      </main>
+
+      <code id="myId">Loading...</code>
+
+      <section>
+        <input type="text" id="roomInput" placeholder="Enter ID of a peer" />
+        <button id="joinButton">Join</button>
+      </section>
+    </div>
+
+    <aside>
+      <ul id="messageList"></ul>
+      <input type="text" id="messageInput" />
+    </aside>
+  </body>
+</html>
